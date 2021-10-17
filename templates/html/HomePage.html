@@ -1,0 +1,261 @@
+{{ define "home_page"}}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/css/iconsfont.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="shortcut icon" href="/static/image/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,160&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>SAOM | Главная</title>
+</head>
+
+<!--Register-->
+<form action="/reg">
+  <!--Закрытие регистрации-->
+
+<div class="block_one" id="block_one">
+  <h1 class="info_register">Registration_::</h1>
+
+  <h1 class="info_two">If you registration,<br>u accept our rules,<br>and require your<br> personal information<br> to our system.</h1>
+
+  <div class="input_login">
+    <h1 class="point_login">:login</h1>
+  <input type="text" placeholder=":input login" name="login">
+  </div>
+
+  <div class="input_email">
+    <h1 class="point_email">:email</h1>
+    <input type="text" placeholder=":input email" name="email">
+  </div>
+
+  <div class="input_password">
+    <h1 class="point_password">:password</h1>
+  <input type="text" placeholder=":input password" name="password">
+  </div>
+
+  <div class="input_repassword">
+    <h1 class="point_repassword">:repeat password</h1>
+    <input type="text" placeholder=":input repassword" name="repassword">
+  </div>
+
+<a href="#" class="have_account" id="link_auth">Have an account?</a>
+
+<button type="submit" class="bn36378">Submit</button>
+</div>
+
+</form>
+
+<!--Join-->
+<form action="/">
+  <div class="block_two" id="block_two">
+    <h1 class="info_join">Log in_::</h1>
+
+    <div class="input_account">
+      <h1 class="point_account">:account</h1>
+    <input type="text" placeholder=":input account" name="login">
+    </div>
+
+    <div class="input_passwordd">
+      <h1 class="point_passwordd">:password</h1>
+      <input type="text" placeholder=":input passwordd" name="password">
+    </div>
+
+<a href="#block_one" class="dont_account" id="link_reg">Don't have an account?</a>
+
+<button class="bn3637">Submit</button>
+  </div>
+</form>
+
+<!--Начало структуры тела-->
+<body>
+  <div id="load" class="load">
+      <div class="intro">
+
+
+      <p id="example3"></p>
+
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+ <script>
+    $(window).on('load', function () {
+        $('#load').delay(17500).fadeOut('slow');
+
+        $('#example3').typeIt({
+            strings: ["Добро пожаловать на Бета-Тест сайта сервера по майкнрафту.", "SWORD ART ONLINE", "После прогрузки сайта,авторизируйтесь или зарегистрируйтесь", "затем, нажмите кнопку Home, что бы вызвать панель.", "Если у вас ноутбук,зажмите клавишу *Fn и стрелку в лево*"],
+            speed: 50,
+            autoStart: false
+        });
+    });
+
+</script>
+
+
+
+<div class="nav_menu">
+  <!--Вызов меню play-->
+  <div class="launch_one" id="start_one">
+    <h1 class="question_one">Желаете ли вы установить лаунчер?</h1>
+
+    <a href="#" id="yes_one"><button class="yes_one">Да</button></a>
+    <a id="no_one"><button class="no_one">Нет</button></a>
+  </div>
+  <!--Скачивание java-->
+  <div class="launch_two" id="start_two">
+    <h1 class="question_two">Желаете ли вы установить java?</h1>
+
+    <a href="#" id="yes_two"><button class="yes_two">Да</button></a>
+    <a id="no_two"><button class="no_two">Нет</button></a>
+  </div>
+  <!--Данная система в разработке-->
+  <div class="launch_three" id="start_three">
+    <h1 class="question_three">Данная система в разработке!</h1>
+
+    <a id="close_one"><button class="no_three">Закрыть</button></a>
+  </div>
+
+ <div class="container" id="container">
+   <div class="menu">
+
+       <!--Hover effect user use mouse and out-->
+
+  <a class="btn_one"  id="btn_one" href="#">
+    <img onmouseover="this.src='/static/image/user_hover.png'"
+   onmouseout="this.src='/static/image/user.png'" src="/static/image/user.png" alt=""></a>
+
+
+      <!--Left open panel-->
+      <a id="panelo">
+        <img class="left_panel" src="/static/image/panel 1.png">
+        <h1 class="NickName">{{ . }}</h1>
+
+        <img class="info" src="/static/image/info 1.png" alt="">
+
+        <div class="stats">
+          <img src="/static/image/help_hover 2.png" class="help_two" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_three" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_four" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_five" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_six" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_seven" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_eight" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_nine" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_ten" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_eleven" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_twelve" title="В разработке">
+          <img src="/static/image/help_hover 2.png" class="help_thirteen" title="В разработке">
+        </div>
+      </a>
+
+
+      <!--Right open panel-->
+      <img class="right_panel" id="panelt" src="/static/image/indicator 1.png" alt="">
+      <!--slide-->
+      <div class="slide" id="panelth">
+
+        <div id="play">
+      <img id="launch" class="play" onmouseover="this.src='/static/image/list_hover 1.png'"
+     onmouseout="this.src='/static/image/list_normal 1.png'" src="/static/image/list_normal 1.png" alt=""><br>
+</div>
+
+      <div >
+     <img onmouseover="this.src='/static/image/list_hover 2.png'"
+    onmouseout="this.src='/static/image/list_normal 2.png'" src="/static/image/list_normal 2.png" alt=""><br>
+</div>
+
+<div>
+    <img onmouseover="this.src='/static/image/list_hover 3.png'"
+   onmouseout="this.src='/static/image/list_normal 3.png'" src="/static/image/list_normal 3.png" alt=""><br>
+</div>
+
+ </div>
+
+
+
+
+      <!--hover effects party use mouse and out-->
+     <a class="btn_two"  href="#" id="btn_two"><img onmouseover="this.src='/static/image/party_hover.png'"
+      onmouseout="this.src='/static/image/party.png'" src="/static/image/party.png" alt=""></a>
+
+      <!--slide-->
+      <img class="indicator_one" id="indicator" src="/static/image/indicator 1.png" alt="">
+      <!--Open party panel-->
+      <div class="slide_party" id="slide">
+      <img onmouseover="this.src='/static/image/list_hover 1.png'"
+     onmouseout="this.src='/static/image/list_normal 1.png'" src="/static/image/list_normal 1.png" alt=""><br>
+     <img onmouseover="this.src='/static/image/list_hover 2.png'"
+    onmouseout="this.src='/static/image/list_normal 2.png'" src="/static/image/list_normal 2.png" alt=""><br>
+    <img onmouseover="this.src='/static/image/list_hover 3.png'"
+   onmouseout="this.src='/static/image/list_normal 3.png'" src="/static/image/list_normal 3.png" alt=""><br>
+ </div>
+
+
+      <!--Hover effects message use mouse and out-->
+      <a href="#" class="btn_three" id="btn_three"><img onmouseover="this.src='/static/image/message_hover.png'"
+       onmouseout="this.src='/static/image/message.png'" src="/static/image/message.png" alt=""></a>
+
+       <div class="message" id="container_message">
+       <!--Open panel message chat-->
+       <img class="chat" src="/static/image/message 1.png" alt="">
+       <!--Here button accept or close-->
+       <a class="btn_accept" id="accept"> <img onmouseover="this.src='/static/image/ok_hover.png'"
+        onmouseout="this.src='/static/image/ok_normal.png'" src="/static/image/ok_normal.png" alt=""></a>
+        <a class="btn_close" id="close"><img onmouseover="this.src='/static/image/cancel_hover.png'"
+         onmouseout="this.src='/static/image/cancel_normal.png'" src="/static/image/cancel_normal.png" alt=""></a>
+       </div>
+
+       <!--Hover effects map use mouse and out-->
+       <a href="#" class="btn_thour" id="btn_four"><img onmouseover="this.src='/static/image/map_hover.png'"
+        onmouseout="this.src='/static/image/map.png'" src="/static/image/map.png" alt=""></a>
+
+        <!--Open map-->
+        <!--slide-->
+        <img class="indicator_two" id="indicatort" src="/static/image/indicator 1.png" alt="">
+        <!--Open party panel-->
+        <div class="slide_party_one" id="slideo">
+        <img onmouseover="this.src='/static/image/list_hover 1.png'"
+       onmouseout="this.src='/static/image/list_normal 1.png'" src="/static/image/list_normal 1.png" alt=""><br>
+       <img onmouseover="this.src='/static/image/list_hover 2.png'"
+      onmouseout="this.src='/static/image/list_normal 2.png'" src="/static/image/list_normal 2.png" alt=""><br>
+      <img onmouseover="this.src='/static/image/list_hover 3.png'"
+     onmouseout="this.src='/static/image/list_normal 3.png'" src="/static/image/list_normal 3.png" alt=""><br>
+   </div>
+
+        <!--Hover effects settings use mouse and out-->
+        <a href="#" class="btn_five" id="btn_five"><img onmouseover="this.src='/static/image/settings_hover.png'"
+         onmouseout="this.src='/static/image/settings.png'" src="/static/image/settings.png" alt=""></a>
+
+         <!--Open panel settings-->
+         <!--slide-->
+         <img class="indicator_three" id="indicatorth" src="/static/image/indicator 1.png" alt="">
+         <!--Open party panel-->
+         <div class="slide_party_three" id="slideth">
+         <img onmouseover="this.src='/static/image/settings_slide_hover.png'"
+        onmouseout="this.src='/static/image/settings_slide.png'" src="/static/image/settings_slide.png" alt=""><br>
+        <img onmouseover="this.src='/static/image/list_hover 2.png'"
+       onmouseout="this.src='/static/image/list_normal 2.png'" src="/static/image/list_normal 2.png" alt=""><br>
+       <img onmouseover="this.src='/static/image/list_hover 3.png'"
+      onmouseout="this.src='/static/image/list_normal 3.png'" src="/static/image/list_normal 3.png" alt=""><br>
+    </div>
+
+
+         <!--Комментарии можешь удалять, всё равно основа у меня, у себя редачю-->
+
+
+   </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+<script src="/static/js/script.js"></script>
+</body>
+</html>
+{{ end }}
