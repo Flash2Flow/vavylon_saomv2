@@ -18,6 +18,7 @@ func HomePage(page http.ResponseWriter, req *http.Request) {
 	if err != nil {
 		fmt.Fprintf(page, err.Error())
 	}
+		temp.ExecuteTemplate(page, "home_page", nil)
 
 	login := req.FormValue("login")
 	password := req.FormValue("password")
@@ -94,5 +95,4 @@ func HomePage(page http.ResponseWriter, req *http.Request) {
 		}
 	}
 
-	temp.ExecuteTemplate(page, "home_page", nil)
 }
