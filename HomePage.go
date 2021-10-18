@@ -56,7 +56,11 @@ func HomePage(page http.ResponseWriter, req *http.Request) {
 					fmt.Fprint(page, err)
 					return
 				}
-
+								active, ok := store.Get("active_login")
+				if ok {
+					temp.ExecuteTemplate(page, "home_page", active)
+					return
+				}
 
 				fmt.Fprintf(page, "Вы были успешно авторизированы. И помните, сайт в бета тестировании...")
 			}
