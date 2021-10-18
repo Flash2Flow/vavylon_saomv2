@@ -13,6 +13,7 @@ func main() {
 
 	//tech pages
 	http.HandleFunc("/reg", reg)
+	http.HandleFunc("/auth", auth)
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
 	port := os.Getenv("PORT")

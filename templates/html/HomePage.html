@@ -45,24 +45,24 @@
 
 <a href="#" class="have_account" id="link_auth">Have an account?</a>
 
-<button type="submit" class="bn36378">Submit</button>
+<button class="bn36378">Submit</button>
 </div>
 
 </form>
 
 <!--Join-->
-<form action="/">
+<form action="/auth">
   <div class="block_two" id="block_two">
     <h1 class="info_join">Log in_::</h1>
 
     <div class="input_account">
       <h1 class="point_account">:account</h1>
-    <input type="text" placeholder=":input account" name="login">
+    <input type="text" placeholder=":input account" name="account">
     </div>
 
     <div class="input_passwordd">
       <h1 class="point_passwordd">:password</h1>
-      <input type="text" placeholder=":input passwordd" name="password">
+      <input type="text" placeholder=":input password" name="password">
     </div>
 
 <a href="#block_one" class="dont_account" id="link_reg">Don't have an account?</a>
@@ -102,24 +102,36 @@
 
 <div class="nav_menu">
   <!--Вызов меню play-->
-  <div class="launch_one" id="start_one">
-    <h1 class="question_one">Желаете ли вы установить лаунчер?</h1>
+  <div class="launch_one" >
+    <img src="/static/image/play.png" class="play_image" id="start_one">
+    <h1 class="alert_launch" id="alert_launch">alert</h1>
+     <h1 class="info_launch" id="info_launch">Желаете ли вы скачать лаунчер?</h1>
 
-    <a href="#" id="yes_one"><button class="yes_one">Да</button></a>
-    <a id="no_one"><button class="no_one">Нет</button></a>
+     <a href="#"><img onmouseover="this.src='/static/image/ok_hover_one.png'"
+    onmouseout="this.src='/static/image/ok_normal_one.png'" src="/static/image/ok_normal_one.png" alt="" class="accept_btn" id="accept_launch"></a>
+    <img onmouseover="this.src='/static/image/cancel_hover.png'"
+   onmouseout="this.src='/static/image/cancel_normal.png'" src="/static/image/cancel_normal.png" alt="" class="cancel_btn" id="cancel_launch">
   </div>
   <!--Скачивание java-->
-  <div class="launch_two" id="start_two">
-    <h1 class="question_two">Желаете ли вы установить java?</h1>
+  <div class="launch_two">
+      <img src="/static/image/message_java.png" class="play_image_java" id="start_java">
+      <h1 class="alert_java" id="alert_java">alert</h1>
+    <h1 class="info_java" id="info_java">Желаете ли вы установить java?</h1>
 
-    <a href="#" id="yes_two"><button class="yes_two">Да</button></a>
-    <a id="no_two"><button class="no_two">Нет</button></a>
+    <a href="#"><img onmouseover="this.src='/static/image/ok_hover.png'"
+   onmouseout="this.src='/static/image/ok_normal.png'" src="/static/image/ok_normal.png" alt="" class="accept_btn_java" id="accept_launch_java"></a>
+   <img onmouseover="this.src='/static/image/cancel_hover_java.png'"
+  onmouseout="this.src='/static/image/cancel_normal_java.png'" src="/static/image/cancel_normal_java.png" alt="" class="cancel_btn_java" id="cancel_launch_java">
   </div>
   <!--Данная система в разработке-->
-  <div class="launch_three" id="start_three">
-    <h1 class="question_three">Данная система в разработке!</h1>
+  <div class="launch_three">
+    <img src="/static/image/message_develop.png" class="play_image_develop" id="start_develop">
+    <h1 class="alert_develop" id="alert_develop">alert</h1>
+    <h1 class="info_develop" id="info_develop">Данная система в разработке!</h1>
 
-    <a id="close_one"><button class="no_three">Закрыть</button></a>
+    <img onmouseover="this.src='/static/image/cancel_hover_develop.png'"
+   onmouseout="this.src='/static/image/cancel_normal_develop.png'" src="/static/image/cancel_normal_develop.png" alt="" class="cancel_btn_develop" id="cancel_launch_develop"></a>
+
   </div>
 
  <div class="container" id="container">
@@ -127,7 +139,7 @@
 
        <!--Hover effect user use mouse and out-->
 
-  <a class="btn_one"  id="btn_one" href="#">
+  <a class="btn_one"  id="btn_one">
     <img onmouseover="this.src='/static/image/user_hover.png'"
    onmouseout="this.src='/static/image/user.png'" src="/static/image/user.png" alt=""></a>
 
@@ -135,7 +147,8 @@
       <!--Left open panel-->
       <a id="panelo">
         <img class="left_panel" src="/static/image/panel 1.png">
-        <h1 class="NickName">{{ . }}</h1>
+        <h1 class="NickName">Ваш ник-нейм</h1>
+        <h1 class="site_develop">Спасибо за участие в бета-тестировании сайта,<br> некоторые функции могут не работать,<br> в скорем времени сделаем.</h1>
 
         <img class="info" src="/static/image/info 1.png" alt="">
 
@@ -166,7 +179,7 @@
      onmouseout="this.src='/static/image/list_normal 1.png'" src="/static/image/list_normal 1.png" alt=""><br>
 </div>
 
-      <div >
+      <div>
      <img onmouseover="this.src='/static/image/list_hover 2.png'"
     onmouseout="this.src='/static/image/list_normal 2.png'" src="/static/image/list_normal 2.png" alt=""><br>
 </div>
@@ -182,7 +195,7 @@
 
 
       <!--hover effects party use mouse and out-->
-     <a class="btn_two"  href="#" id="btn_two"><img onmouseover="this.src='/static/image/party_hover.png'"
+     <a class="btn_two"  id="btn_two"><img onmouseover="this.src='/static/image/party_hover.png'"
       onmouseout="this.src='/static/image/party.png'" src="/static/image/party.png" alt=""></a>
 
       <!--slide-->
@@ -199,21 +212,21 @@
 
 
       <!--Hover effects message use mouse and out-->
-      <a href="#" class="btn_three" id="btn_three"><img onmouseover="this.src='/static/image/message_hover.png'"
+      <a class="btn_three" id="btn_three"><img onmouseover="this.src='/static/image/message_hover.png'"
        onmouseout="this.src='/static/image/message.png'" src="/static/image/message.png" alt=""></a>
 
        <div class="message" id="container_message">
        <!--Open panel message chat-->
-       <img class="chat" src="/static/image/message 1.png" alt="">
+
        <!--Here button accept or close-->
-       <a class="btn_accept" id="accept"> <img onmouseover="this.src='/static/image/ok_hover.png'"
-        onmouseout="this.src='/static/image/ok_normal.png'" src="/static/image/ok_normal.png" alt=""></a>
-        <a class="btn_close" id="close"><img onmouseover="this.src='/static/image/cancel_hover.png'"
-         onmouseout="this.src='/static/image/cancel_normal.png'" src="/static/image/cancel_normal.png" alt=""></a>
+       <a class="btn_accept" id="accept"> <img onmouseover="this.src='/static/image/.png'"
+        onmouseout="this.src='/static/image/.png'" src="/static/image/.png" alt=""></a>
+        <a class="btn_close" id="close"><img onmouseover="this.src='/static/image/.png'"
+         onmouseout="this.src='/static/image/.png'" src="/static/image/.png" alt=""></a>
        </div>
 
        <!--Hover effects map use mouse and out-->
-       <a href="#" class="btn_thour" id="btn_four"><img onmouseover="this.src='/static/image/map_hover.png'"
+       <a class="btn_thour" id="btn_four"><img onmouseover="this.src='/static/image/map_hover.png'"
         onmouseout="this.src='/static/image/map.png'" src="/static/image/map.png" alt=""></a>
 
         <!--Open map-->
@@ -230,7 +243,7 @@
    </div>
 
         <!--Hover effects settings use mouse and out-->
-        <a href="#" class="btn_five" id="btn_five"><img onmouseover="this.src='/static/image/settings_hover.png'"
+        <a class="btn_five" id="btn_five"><img onmouseover="this.src='/static/image/settings_hover.png'"
          onmouseout="this.src='/static/image/settings.png'" src="/static/image/settings.png" alt=""></a>
 
          <!--Open panel settings-->
@@ -258,4 +271,3 @@
 <script src="/static/js/script.js"></script>
 </body>
 </html>
-{{ end }}

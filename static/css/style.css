@@ -162,7 +162,7 @@ panelt:target{
 }
 
 #accept{
-  display: none;
+
 }
 
 #close{
@@ -182,6 +182,50 @@ panelt:target{
 }
 
 #slideth{
+  display: none;
+}
+
+#cancel_launch{
+  display: none;
+}
+
+#accept_launch{
+  display: none;
+}
+
+#cancel_launch_java{
+  display: none;
+}
+
+#accept_launch_java{
+  display: none;
+}
+
+#cancel_launch_develop{
+  display: none;
+}
+
+#info_launch{
+  display: none;
+}
+
+#info_java{
+  display: none;
+}
+
+#info_develop{
+  display: none;
+}
+
+#alert_launch{
+  display: none;
+}
+
+#alert_java{
+  display: none;
+}
+
+#alert_develop{
   display: none;
 }
 
@@ -225,6 +269,17 @@ margin-top: 55px;
 transform: perspective(500px) rotateY(10deg);
 
           transition: 1s;
+}
+
+.site_develop{
+  font-family: 'Raleway',sans-serif;
+      font-size: 9.5px;
+      position: absolute;
+      top: 390px;
+      left: 480px;
+      transform: perspective(500px) rotateY(
+  15deg) rotateZ(
+  359deg);
 }
 
 /*stats*/
@@ -304,211 +359,162 @@ top: 296px;
       top: 264px;
 }
 /*launch*/
-.launch_one{
-  display: none;
+.play_image{
+  -webkit-animation: center 1s;
+  z-index: 100;
   position: absolute;
-width: 600px;
-height: 200px;
-left: 550px;
-top: 200px;
-
-background: linear-gradient(111.39deg, #337DD8 16.96%, rgba(51, 125, 216, 0.5) 77.18%);
-border-radius: 19px;
-
-z-index: 100;
--webkit-animation: center 1s;
+  display: none;
+  top: 250px;
+    left: 690px;
 }
 
-.question_one{
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 40px;
+.alert_launch{
+  position: absolute;
+      top: 275px;
+      color: grey;
+      left: 825px;
+      z-index: 100;
+      font-size: 25px;
+      font-family: 'Raleway',sans-serif;
+      text-transform: uppercase;
+
+      -webkit-animation: center 1s;
 }
 
-.yes_one{
-    padding: 15px 50px;
-    margin-top: 50px;
-    margin-left: 90px;
-    border: 2px solid #008000;
-    background: none;
-    border-radius: 26px;
-    color: white;
+.info_launch{
+  position: absolute;
+    top: 360px;
+    left: 739px;
+    font-size: 15px;
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+    z-index: 100;
+
+      -webkit-animation: center 1s;
 }
 
-.yes_one:hover{
-  transition: .3s;
-  border: 2px solid #008000;
-  background-color: #008000;
+.cancel_btn{
+  position: absolute;
+    z-index: 100;
+    position: absolute;
+    top: 425px;
+    left: 950px;
 
+    -webkit-animation: center 1s;
 }
 
-.no_one{
-  float: right;
-  padding: 15px 50px;
-    margin-top: 50px;
-    margin-right: 90px;
-    border: 2px solid #800000;
-    background: none;
-    border-radius: 26px;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+.accept_btn{
+  z-index: 100;
+    position: absolute;
+    top: 425px;
+  left: 740px;
+
+    -webkit-animation: center 1s;
 }
 
-.no_one:hover{
-  transition: .3s;
-  border: 2px solid #800000;
-  background-color: #800000;
-}
+
 /*java*/
-.launch_two{
-  display: none;
+.play_image_java{
+  -webkit-animation: center 1s;
+  z-index: 100;
   position: absolute;
-width: 600px;
-height: 200px;
-left: 550px;
-top: 200px;
-
-background: linear-gradient(111.39deg, #337DD8 16.96%, rgba(51, 125, 216, 0.5) 77.18%);
-border-radius: 19px;
-
-z-index: 100;
--webkit-animation: center 1s;
+  display: none;
+  top: 250px;
+    left: 690px;
 }
 
-.question_two{
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 40px;
+.alert_java{
+  position: absolute;
+      top: 275px;
+      color: grey;
+      left: 825px;
+      z-index: 100;
+      font-size: 25px;
+      font-family: 'Raleway',sans-serif;
+      text-transform: uppercase;
+
+      -webkit-animation: center 1s;
 }
 
-.yes_two{
-    padding: 15px 50px;
-    margin-top: 50px;
-    margin-left: 90px;
-    border: 2px solid #008000;
-    background: none;
-    border-radius: 26px;
-    color: white;
+.info_java{
+  position: absolute;
+    top: 360px;
+    left: 743px;
+    font-size: 15px;
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+    z-index: 100;
+
+      -webkit-animation: center 1s;
 }
 
-.yes_two:hover{
-  transition: .3s;
-  border: 2px solid #008000;
-  background-color: #008000;
 
+.cancel_btn_java{
+  position: absolute;
+    z-index: 100;
+    position: absolute;
+    top: 425px;
+  left: 950px;
+
+    -webkit-animation: center 1s;
 }
 
-.no_two{
-  float: right;
-  padding: 15px 50px;
-    margin-top: 50px;
-    margin-right: 90px;
-    border: 2px solid #800000;
-    background: none;
-    border-radius: 26px;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+.accept_btn_java{
+  z-index: 100;
+    position: absolute;
+    top: 425px;
+    left: 740px;
+
+    -webkit-animation: center 1s;
 }
 
-.no_two:hover{
-  transition: .3s;
-  border: 2px solid #800000;
-  background-color: #800000;
-}
+
 /*develop*/
-.launch_three{
-  display: none;
+.play_image_develop{
+  -webkit-animation: center 1s;
+  z-index: 100;
   position: absolute;
-width: 600px;
-height: 200px;
-left: 550px;
-top: 200px;
-
-background: linear-gradient(111.39deg, #337DD8 16.96%, rgba(51, 125, 216, 0.5) 77.18%);
-border-radius: 19px;
-
-z-index: 100;
--webkit-animation: center 1s;
+  display: none;
+  top: 250px;
+    left: 690px;
 }
 
-.question_three{
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 40px;
+.alert_develop{
+  position: absolute;
+    top: 275px;
+    color: grey;
+    left: 825px;
+    z-index: 100;
+    font-size: 25px;
+    font-family: 'Raleway',sans-serif;
+    text-transform: uppercase;
+
+    -webkit-animation: center 1s;
 }
 
-.yes_three{
-    padding: 15px 50px;
-    margin-top: 50px;
-    margin-left: 90px;
-    border: 2px solid #008000;
-    background: none;
-    border-radius: 26px;
-    color: white;
+.info_develop{
+  position: absolute;
+    top: 360px;
+    left: 750px;
+    font-size: 15px;
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+    z-index: 100;
+
+      -webkit-animation: center 1s;
 }
 
-.yes_three:hover{
-  transition: .3s;
-  border: 2px solid #008000;
-  background-color: #008000;
-
+.cancel_btn_develop{
+  position: absolute;
+      z-index: 100;
+      position: absolute;
+      top: 425px;
+          left: 845px;
+      -webkit-animation: center 1s;
 }
 
-.no_three{
-  padding: 15px 50px;
-    margin-top: 50px;
-  margin-left: 214px;
-    border: 2px solid #800000;
-    background: none;
-    border-radius: 26px;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
-}
 
-.no_three:hover{
-  transition: .3s;
-  border: 2px solid #800000;
-  background-color: #800000;
-}
+
 
 
 
@@ -1034,210 +1040,152 @@ left: 750px;
     border-radius: 19px;
     -webkit-animation: center 1s;
 }
-.launch_one{
-  display: none;
+/*launch*/
+.play_image{
+  -webkit-animation: center 1s;
+  z-index: 100;
   position: absolute;
-width: 600px;
-height: 200px;
-left: 690px;
-    top: 300px;
-
-background: linear-gradient(111.39deg, #337DD8 16.96%, rgba(51, 125, 216, 0.5) 77.18%);
-border-radius: 19px;
-
-z-index: 100;
--webkit-animation: center 1s;
+  display: none;
+  top: 300px;
+    left: 780px;
 }
 
-.question_one{
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 40px;
-}
-
-.yes_one{
-    padding: 15px 50px;
-    margin-top: 50px;
-    margin-left: 90px;
-    border: 2px solid #008000;
-    background: none;
-    border-radius: 26px;
-    color: white;
+.alert_launch{
+  position: absolute;
+    top: 326px;
+    color: grey;
+    left: 920px;
+    z-index: 100;
+    font-size: 25px;
     font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+    text-transform: uppercase;
+    -webkit-animation: center 1s;
 }
 
-.yes_one:hover{
-  transition: .3s;
-  border: 2px solid #008000;
-  background-color: #008000;
-
+.info_launch{
+  position: absolute;
+      top: 410px;
+      left: 832px;
+      font-size: 15px;
+      font-family: 'Raleway',sans-serif;
+      font-weight: bold;
+      z-index: 100;
+      -webkit-animation: center 1s;
 }
 
-.no_one{
-  float: right;
-  padding: 15px 50px;
-    margin-top: 50px;
-    margin-right: 90px;
-    border: 2px solid #800000;
-    background: none;
-    border-radius: 26px;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+.cancel_btn{
+  position: absolute;
+    z-index: 100;
+    position: absolute;
+    top: 474px;
+    left: 1043px;
+
+    -webkit-animation: center 1s;
 }
 
-.no_one:hover{
-  transition: .3s;
-  border: 2px solid #800000;
-  background-color: #800000;
+.accept_btn{
+  z-index: 100;
+  position: absolute;
+  -webkit-animation: center 1s;
+  top: 474px;
+  left: 833px;
 }
+
+
 /*java*/
-.launch_two{
-  display: none;
+.play_image_java{
+  -webkit-animation: center 1s;
+  z-index: 100;
   position: absolute;
-width: 600px;
-height: 200px;
-left: 690px;
-    top: 300px;
-
-background: linear-gradient(111.39deg, #337DD8 16.96%, rgba(51, 125, 216, 0.5) 77.18%);
-border-radius: 19px;
-
-z-index: 100;
--webkit-animation: center 1s;
+  display: none;
+  top: 300px;
+    left: 780px;
 }
 
-.question_two{
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 40px;
-}
-
-.yes_two{
-    padding: 15px 50px;
-    margin-top: 50px;
-    margin-left: 90px;
-    border: 2px solid #008000;
-    background: none;
-    border-radius: 26px;
-    color: white;
+.alert_java{
+  position: absolute;
+    top: 326px;
+    color: grey;
+    left: 920px;
+    z-index: 100;
+    font-size: 25px;
     font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+    text-transform: uppercase;
+    -webkit-animation: center 1s;
 }
 
-.yes_two:hover{
-  transition: .3s;
-  border: 2px solid #008000;
-  background-color: #008000;
 
+.info_java{
+  position: absolute;
+      top: 410px;
+      left: 832px;
+      font-size: 15px;
+      font-family: 'Raleway',sans-serif;
+      font-weight: bold;
+      z-index: 100;
+      -webkit-animation: center 1s;
 }
 
-.no_two{
-  float: right;
-  padding: 15px 50px;
-    margin-top: 50px;
-    margin-right: 90px;
-    border: 2px solid #800000;
-    background: none;
-    border-radius: 26px;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+
+.cancel_btn_java{
+  position: absolute;
+    z-index: 100;
+    position: absolute;
+    top: 474px;
+    left: 1043px;
+
+    -webkit-animation: center 1s;
 }
 
-.no_two:hover{
-  transition: .3s;
-  border: 2px solid #800000;
-  background-color: #800000;
+.accept_btn_java{
+  z-index: 100;
+  position: absolute;
+  -webkit-animation: center 1s;
+  top: 474px;
+  left: 833px;
 }
+
+
 /*develop*/
-.launch_three{
-  display: none;
+.play_image_develop{
+  -webkit-animation: center 1s;
+  z-index: 100;
   position: absolute;
-width: 600px;
-height: 200px;
-left: 690px;
-    top: 300px;
-
-background: linear-gradient(111.39deg, #337DD8 16.96%, rgba(51, 125, 216, 0.5) 77.18%);
-border-radius: 19px;
-
-z-index: 100;
--webkit-animation: center 1s;
+  display: none;
+  top: 300px;
+    left: 780px;
 }
 
-.question_three{
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 40px;
-}
-
-.yes_three{
-    padding: 15px 50px;
-    margin-top: 50px;
-    margin-left: 90px;
-    border: 2px solid #008000;
-    background: none;
-    border-radius: 26px;
-    color: white;
+.alert_develop{
+  position: absolute;
+    top: 326px;
+    color: grey;
+    left: 920px;
+    z-index: 100;
+    font-size: 25px;
     font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
+    text-transform: uppercase;
+    -webkit-animation: center 1s;
 }
 
-.yes_three:hover{
-  transition: .3s;
-  border: 2px solid #008000;
-  background-color: #008000;
-
+.info_develop{
+  position: absolute;
+      top: 410px;
+      left: 840px;
+      font-size: 15px;
+      font-family: 'Raleway',sans-serif;
+      font-weight: bold;
+      z-index: 100;
+      -webkit-animation: center 1s;
 }
 
-.no_three{
-  padding: 15px 50px;
-    margin-top: 50px;
-  margin-left: 214px;
-    border: 2px solid #800000;
-    background: none;
-    border-radius: 26px;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    cursor: pointer;
-    font-size: 15px;
-}
+.cancel_btn_develop{
+  position: absolute;
+    z-index: 100;
+    position: absolute;
+    top: 474px;
+    left: 943px;
 
-.no_three:hover{
-  transition: .3s;
-  border: 2px solid #800000;
-  background-color: #800000;
+    -webkit-animation: center 1s;
 }
-
 }
