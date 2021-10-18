@@ -18,12 +18,6 @@ func HomePage(page http.ResponseWriter, req *http.Request) {
 
 	temp.ExecuteTemplate(page, "home_page", nil)
 
-	store, err := session.Start(context.Background(), page, req)
-	if err != nil {
-		fmt.Fprint(page, err)
-		return
-	}
-
 
 
 }
