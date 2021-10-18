@@ -11,6 +11,11 @@ import (
 )
 
 func auth(page http.ResponseWriter, req *http.Request) {
+					store, err := session.Start(context.Background(), page, req)
+				if err != nil {
+					fmt.Fprint(page, err)
+					return
+				}
 	login := req.FormValue("login")
 	password := req.FormValue("password")
 
@@ -35,11 +40,6 @@ func auth(page http.ResponseWriter, req *http.Request) {
 			json.Unmarshal([]byte(body), &res)
 			if res["Status"] == "OK"{
 				log.Println("Nice request")
-				store, err := session.Start(context.Background(), page, req)
-				if err != nil {
-					fmt.Fprint(page, err)
-					return
-				}
 
 				store.Set("active_login", login)
 				err = store.Save()
